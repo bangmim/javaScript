@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--lang : 일반 브라우저에서는 큰 차이가 없지만
+시각 장애인을 위한 리더기 등의 기본 언어 설정으로 쓰이는
+웹접근성(Accessibility) 측면에서 매우 중요합니다 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        document.write('<b>Hello, World!</b>');
+
+        console.log('hello, world');
+
+<!--        alert('안녕하세요!');-->
+<!--        prompt('안녕하세요?');-->
+<!-- 사용자의 이름을 입력받아 인사말을 출력하는 프로그램-->
+var name = prompt('이름을 입력해주세요');
+console.log('이름은 ',name);
+alert('Hellow! '+name);
+    </script>
+<!--    alert : [확인] 버튼 하나만 덩그러니 있고, 더 추가를 할 수도 없기 때문에 다양한 용도로 사용하기엔 어려움이 있지만,
+에러 메시지나 중요한 알림을 사용자에게 전달할 때에는 매우 유용합니다.
+모든 브라우저에서 다 잘 작동하므로 '디버깅(Debugging, 오류 검색/ 수정)'을 위한 최소한의 장치이기도 합니다.-->
+<!--    prompt() : 사용자에게 정보를 입력받는다-->
+<!--    변수명의 목적 : 이 변수가 어떤 의미를 갖고 있는지 한눈에 나타내는 것-->
+<!--    참고! prompt()는 alert()와 마찬가지고 모양을 임의로 바꿀 수도 없고,
+입력받을 때 셀렉트박스나 체크박스 등도 사용할 수 없어서 실무에서는 잘 사용하지 않는다-->
+</head>
+<body>
+
+</body>
+</html>

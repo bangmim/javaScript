@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>평균값 계산하기</title>
+</head>
+<body>
+<script>
+<!--  var value1 = prompt('1번 숫자를 입력해주세요.');-->
+<!--  var value2 = prompt('2번 숫자를 입력해주세요.');-->
+
+<!--var num1 = Number(value1);-->
+<!--var num2 = Number(value2);-->
+
+<!--var sum = num1+num2;-->
+<!--&lt;!&ndash;var avg = (num1+num2)/2;&ndash;&gt;-->
+<!--var avg = sum/2;-->
+<!--console.log('average',avg);-->
+
+<!--alert('두 수의 합 ' +sum);-->
+<!--alert('평균 : '+avg);-->
+
+/* 반복문을 사용
+//총 합을 저장하기 위한 변수
+var sum = 0;
+
+for  (var i=1; i<=10; i++){
+var value = prompt('숫자를 입력하세요');
+
+//입력받은 문자열을 숫자로 변환하여 총합 변수에 더한다
+sum+=Number(value);
+}
+var avg = sum/10;
+*/
+
+/*
+//전체 숫자의 개수도 입력받기
+var sum = 0;
+var totalNumbers = Number(prompt('숫자의 개수를 입력해주세요'));
+
+for(var i=1; i<=totalNumbers; i++){
+var num = Number(prompt(i+'번 숫자를 입력하세요'));
+sum += Number(num);
+}
+var avg = sum/totalNumbers;
+*/
+
+//while 반복문으로 사용해보기
+var totalNumbers = Number(prompt('숫자의 개수를 입력해주세요'));
+var sum = 0;
+
+//반복을 위한 변수
+var i = 1;
+
+while(i<=totalNumbers){
+var num = Number(prompt(i+'번 숫자를 입력하세요'));
+sum += Number(num);
+i++
+}
+var avg = sum/totalNumbers;
+
+alert('합 : '+sum);
+alert('평균 : '+avg);
+</script>
+<!--prompt()는 숫자를 입력해도 문자열로 return 한다-->
+
+<!--NumberAPI를 사용하여 숫자로 변환한다-->
+<!--parseInt()도 마찬가지이다. -->
+<!--차이점
+Number('2px') // NaN
+parseInt('2px') // 2-->
+
+<!--DRY 원칙 : Don't Repeat Yourself, 중복을 없애라-->
+
+<!--for : 반복해야 할 횟수가 명확할 때-->
+<!--while : 반복해야 할 횟수가 명확하지 않을 때
+예) while(!gameOver){
+// 게임 오버가 되지 않은 상태이므로 게임 로직 징행
+}-->
+</body>
+</html>
